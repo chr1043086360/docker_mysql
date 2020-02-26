@@ -1,0 +1,2 @@
+#!/bin/bash
+docker run -d --name mysqld_prod --restart=always -e MYSQL_ROOT_PASSWORD=你的密码  -p 3306:3306 -v /data/mysql/data:/var/lib/mysql mysqld_prod:5.7 --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci
