@@ -138,7 +138,7 @@ innodb_autoinc_lock_mode = 1
 - run.sh 启动脚本
 
 ```bash
-docker run -d --name mysqld_prod --restart=always -e MYSQL_ROOT_PASSWORD=你的密码  -p 3306:3306 -v /data/mysql/data:/var/lib/mysql mysqld_prod:5.7 --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci
+docker run -d --name zhulin_mysql --restart=always -e MYSQL_ROOT_PASSWORD=你的密码  -p 3306:3306 -v /data/mysql/data:/var/lib/mysql zhulin_mysql:5.7 --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci
 ```
 
 - 生成镜像
